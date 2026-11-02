@@ -104,3 +104,6 @@ The warden runs until it receives a `KeyboardInterrupt` (Ctrl-C) or `SIGTERM`. O
   doi       = {10.1007/978-3-032-35586-7_10}
 }
 ```
+
+## Acknowledgement 
+This work has been supported by the Agentur für Innovation in der Cybersicherheit GmbH. The Agentur für Innovation in der Cybersicherheit GmbH did not interfere in the research process and its results. https://www.cyberagentur.de/programme/hsk/ see in https://attribut.cs.uni-magdeburg.de/. 
