@@ -1,4 +1,4 @@
-# Active Warden
+# Active Warden to Analyze and Counter Stegomalware
 
 This code implements the *Active Warden* (a *Web-Tunneling Stego Warden*) described in our paper, linked below. The warden is a GNU/Linux command-line tool that sits on an intermediate node between an infected host and its command-and-control (C2) server. It pulls packets off the Netfilter `FORWARD`/`mangle` hook, edits them in-flow with [Scapy](https://scapy.readthedocs.io/), and returns an accept / drop / re-queue verdict. This enables disrupting the malicious connection without outright dropping it.
 
