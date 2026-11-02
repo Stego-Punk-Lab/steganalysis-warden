@@ -1,0 +1,23 @@
+[project]
+name = "steganalysis-warden"
+version = "1.0.0"
+description = "Web-Tunneling Stego Warden - Layer 4 active warden against StegoMalware C2 channels"
+requires-python = ">=3.11"
+dependencies = [
+    "netfilterqueue==1.1.0",
+    "PyYAML==6.0.3",
+    "scapy==2.6.1",
+]
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.390",
+]
+
+[tool.pyright]
+include = ["packet.py", "protDict.py", "web_warden.py", "cli.py", "target.py", "flow.py", "pipeline.py", "iptables.py"]
+pythonVersion = "3.13"
+typeCheckingMode = "basic"
+
+[tool.uv]
+package = false
